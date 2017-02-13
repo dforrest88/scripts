@@ -2,7 +2,7 @@
 
 HOST=$1
 PORT=$2
-
+touch test.txt
 echo "Trying to connect to port $PORT on $HOST"
 
 # Make sure the port is open
