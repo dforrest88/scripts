@@ -3,6 +3,8 @@
 HOST=$1
 PORT=$2
 
+echo "Trying to connect to port $PORT on $HOST"
+
 # Make sure the port is open
 nc -z -G 5 -w 5 "${HOST}" $PORT
 if [ $? -gt 0 ]; then   
