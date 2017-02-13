@@ -5,6 +5,8 @@ PORT=$2
 
 echo "Trying to connect to port $PORT on $HOST"
 
+curl ${HOST}:${PORT}
+
 # Make sure the port is open
 nc -z -w5 $HOST $PORT
 if [ $? -gt 0 ]; then   
